@@ -1,4 +1,4 @@
-# CoCu
+# Bridging Semantic Gaps for Language Supervised Semantic Segmentation
 
 ## Updates
 
