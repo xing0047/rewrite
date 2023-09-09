@@ -1,5 +1,5 @@
 # CoCu
 
-# TODO
+## Updates
 
-- [ ] Code will be released.
+- [09/2023] Code will be released.
