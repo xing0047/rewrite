@@ -23,4 +23,4 @@ Please consider citing our paper if you find our work useful.
 
 ## Acknowledgement
 
-The repo is maintained by Xing Yun.
+The repo is maintained by.
