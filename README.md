@@ -7,4 +7,8 @@
 
 ## Citation
 
-If you think our work is useful, please cite our paper.
+Please consider citing our paper if you make use of this codebase.
+
+## Acknowledgement
+
+The repo is maintained by.
