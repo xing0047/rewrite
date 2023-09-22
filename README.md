@@ -17,6 +17,8 @@
 
 ## Inference
 
+## FAQ
+
 ## Citation
 
 Please consider citing our paper if you find our work useful.
