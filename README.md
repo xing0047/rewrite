@@ -1,6 +1,6 @@
 # [NeurIPS 2023] Bridging Semantic Gaps for Language Supervised Semantic Segmentation
 
-This is the official repository of the following paper: 
+This is the official repository of the paper below.
 > **Bridging Semantic Gaps for Language Supervised Semantic Segmentation**<br>
 > [Yun Xing](https://scholar.google.com/citations?user=uOAYTXoAAAAJ&hl=en&oi=ao), Jian Kang, [Aoran Xiao](https://scholar.google.com/citations?user=yGKsEpAAAAAJ&hl=en), Jiahao Nie, [Shijian Lu](https://scholar.google.com/citations?user=uYmK-A0AAAAJ&hl=en&oi=ao)<br>
 
