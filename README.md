@@ -2,7 +2,7 @@
 
 This is the official repository of the following paper: 
 > **Bridging Semantic Gaps for Language Supervised Semantic Segmentation**<br>
-> [Yun Xing](https://scholar.google.com/citations?user=uOAYTXoAAAAJ&hl=en&oi=ao), Jian Kang, [Aoran Xiao](https://scholar.google.com/citations?user=yGKsEpAAAAAJ&hl=en), [Jiahao Nie](), [Shijian Lu](https://scholar.google.com/citations?user=uYmK-A0AAAAJ&hl=en&oi=ao)<br>
+> [Yun Xing](https://scholar.google.com/citations?user=uOAYTXoAAAAJ&hl=en&oi=ao), Jian Kang, [Aoran Xiao](https://scholar.google.com/citations?user=yGKsEpAAAAAJ&hl=en), Jiahao Nie, [Shijian Lu](https://scholar.google.com/citations?user=uYmK-A0AAAAJ&hl=en&oi=ao)<br>
 
 ## Updates
 
