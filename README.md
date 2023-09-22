@@ -17,6 +17,8 @@
 
 ## Inference
 
+## Variants
+
 ## FAQ
 
 ## Citation
