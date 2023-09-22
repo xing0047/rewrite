@@ -1,6 +1,6 @@
 # [NeurIPS 2023] Bridging Semantic Gaps for Language Supervised Semantic Segmentation
 
-## Update
+## Updates
 
 - [09/2023] Arxiv available.
 - [09/2023] Code released.
