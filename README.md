@@ -9,6 +9,9 @@ This is the official repository of the following paper.
 - [09/2023] Arxiv available.
 - [09/2023] Code released.
 
+## TODO
+[ ] Curation Code release.
+
 ## Environmental Setup
 ```
 conda create -n cocu python=3.7 -y
@@ -39,6 +42,8 @@ pip install clip-retrieval
 ##### ADE20K
 ##### ImageNet-S
 ##### COCO Stuff
+
+## Concept Curation
 
 ## Train
 
