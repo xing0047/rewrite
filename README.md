@@ -9,7 +9,6 @@ This is the official repository of the following paper.
 - [09/2023] Arxiv available.
 
 ## TODO
-- [ ] Broader experiments.
 - [ ] Release curation code.
 
 ## Environmental Setup
