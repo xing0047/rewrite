@@ -13,13 +13,20 @@ This is the official repository of the following paper.
 ```
 conda create -n cocu python=3.7 -y
 conda activate cocu
+```
+##### torch
+```
 conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c conda-forge
 ```
-##### install apex
+##### apex
 ```
 git clone https://github.com/NVIDIA/apex
 cd apex
 pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+```
+##### clip-retrieval
+```
+pip install clip-retrieval
 ```
 
 ## Result
