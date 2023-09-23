@@ -7,7 +7,6 @@ This is the official repository of the following paper.
 ## Updates
 
 - [09/2023] Arxiv available.
-- [09/2023] Code released.
 
 ## TODO
 - [ ] Broader experiments.
