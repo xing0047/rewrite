@@ -29,9 +29,16 @@ pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp
 pip install clip-retrieval
 ```
 
-## Result
-
 ## Data Preparation
+##### GCC3M
+##### GCC12M
+##### YFCC14M
+##### Pascal VOC
+##### Pascal Context
+##### COCO
+##### ADE20K
+##### ImageNet-S
+##### COCO Stuff
 
 ## Train
 
