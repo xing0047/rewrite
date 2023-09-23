@@ -10,7 +10,7 @@ This is the official repository of the following paper.
 - [09/2023] Code released.
 
 ## TODO
-[ ] Curation Code release.
+- [ ] Curation Code release.
 
 ## Environmental Setup
 ```
