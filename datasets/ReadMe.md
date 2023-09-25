@@ -3,7 +3,7 @@
 Your data should look like:
 
 ```
-GroupViT
+CoCu
 ├── local_data
 │   ├── c3_shards
 │   ├── c12_shards
