@@ -5,6 +5,10 @@ Your data should look like:
 ```
 GroupViT
 ├── local_data
+│   ├── c3_shards
+│   ├── c12_shards
+│   ├── y14_shards
+│   ├── imagenet_shards
 │   ├── cityscapes
 │   │   ├── leftImg8bit
 │   │   │   ├── val
