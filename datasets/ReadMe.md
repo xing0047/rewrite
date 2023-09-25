@@ -1,5 +1,7 @@
 ## Pre-train Data
 
+As issue suggested, setting a lower `processes_count` (in my practice is `4`) ensures higher successful rate of img2dataset download. 
+
 #### GCC3M
 
 Please download [CC3M training split file](https://storage.cloud.google.com/gcc-data/Train/GCC-training.tsv?_ga=2.191230122.-1896153081.1529438250) and name it to `c3.tsv`. Then run script below.
