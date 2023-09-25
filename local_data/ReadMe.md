@@ -4,7 +4,7 @@ Your data should look like:
 
 ```
 CoCu
-├── local_data
+├── $DATASETS
 │   ├── c3_shards
 │   ├── c12_shards
 │   ├── y14_shards
@@ -65,7 +65,7 @@ img2dataset --url_list c3.tsv \
   --url_col "url" \
   --caption_col "caption" \
   --output_format webdataset \
-  --output_folder local_data/c3_shards \
+  --output_folder $DATASETS/c3_shards \
   --processes_count 4 \
   --thread_count 16 \
   --image_size 512 \
@@ -83,7 +83,7 @@ img2dataset --url_list c12.tsv \
   --url_col "url" \
   --caption_col "caption" \
   --output_format webdataset \
-  --output_folder local_data/c12_shards \
+  --output_folder $DATASETS/c12_shards \
   --processes_count 4 \
   --thread_count 16 \
   --image_size 512 \
@@ -136,10 +136,10 @@ Please download train and val set of Pascal Context as below.
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2010/VOCtrainval_03-May-2010.tar
 ```
 
-Additionally, get `trainval_merged.json` from [here](https://codalabuser.blob.core.windows.net/public/trainval_merged.json) and put it under `local_data/VOCdevkit/VOC2010/`. Then run as follows,
+Additionally, get `trainval_merged.json` from [here](https://codalabuser.blob.core.windows.net/public/trainval_merged.json) and put it under `$DATASETS/VOCdevkit/VOC2010/`. Then run as follows,
 
 ```
-python tools/convert_datasets/pascal_context.py local_data/VOCdevkit local_data/VOCdevkit/VOC2010/trainval_merged.json
+python tools/convert_datasets/pascal_context.py $DATASETS/VOCdevkit $DATASETS/VOCdevkit/VOC2010/trainval_merged.json
 ```
 #### COCO Stuff
 
@@ -148,7 +148,7 @@ wget http://images.cocodataset.org/zips/val2017.zip
 wget http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuffthingmaps_trainval2017.zip
 unzip val2017.zip -d images/
 unzip stuffthingmaps_trainval2017.zip -d annotations/
-python tools/convert_datasets/coco_stuff164k.py local_data/coco_stuff164k --nproc 8
+python tools/convert_datasets/coco_stuff164k.py $DATASETS/coco_stuff164k --nproc 8
 ```
 
 #### ADE20K
@@ -164,7 +164,7 @@ python tools/convert_datasets/cityscapes.py data/cityscapes --nproc 8
 
 #### ImageNet-S
 
-First, you should have a copy of ImageNet dataset. A way to do this is to download from [here](https://www.kaggle.com/competitions/imagenet-object-localization-challenge/data). Save or soft-link it to `local_data/ImageNet`.
+First, you should have a copy of ImageNet dataset. A way to do this is to download from [here](https://www.kaggle.com/competitions/imagenet-object-localization-challenge/data). Save or soft-link it to `$DATASETS/ImageNet`.
 
 Then, follow instructions given [here](https://github.com/LUSSeg/ImageNet-S). 
 ```
@@ -175,15 +175,15 @@ cd ImageNet-S
 We only need validation set in our setting. Prepare for ImageNet-S-50 as follows:
 ```
 python datapreparation_val.py \
-  --imagenet-dir local_data/ImageNet \
-  --save-dir local_data/ImageNet-S \
+  --imagenet-dir $DATASETS/ImageNet \
+  --save-dir $DATASETS/ImageNet-S \
   --mode 50
 ```
 Samely, for ImageNet-S-300:
 ```
 python datapreparation_val.py \
-  --imagenet-dir local_data/ImageNet \
-  --save-dir local_data/ImageNet-S \
+  --imagenet-dir $DATASETS/ImageNet \
+  --save-dir $DATASETS/ImageNet-S \
   --mode 300
 ```
 
