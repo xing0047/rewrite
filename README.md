@@ -37,6 +37,9 @@ pip install -r requirements.txt
 ```
 pip install clip-retrieval
 ```
+## Data Preparation
+
+Please refer to [here](https://github.com/xing0047/CoCu/tree/main/data).
 
 ## Citation
 
