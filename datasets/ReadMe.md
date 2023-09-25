@@ -112,7 +112,11 @@ python tools/convert_datasets/cityscapes.py data/cityscapes --nproc 8
 
 First, you should have a copy of ImageNet dataset. A way to do this is to download from [here](https://www.kaggle.com/competitions/imagenet-object-localization-challenge/data). Save it to `local_data/ImageNet`.
 
-Then, follow instructions given by [ImageNet-S](https://github.com/LUSSeg/ImageNet-S). 
+Then, follow instructions given [here](https://github.com/LUSSeg/ImageNet-S). 
+```
+git clone https://github.com/LUSSeg/ImageNet-S.git
+cd ImageNet-S
+```
 
 We only need validation set in our setting. Prepare for ImageNet-S-50 as follows:
 ```
