@@ -65,7 +65,7 @@ Last, convert this to webdataset format.
 python convert_dataset/convert_yfcc14m.py --root yfcc100m_zip --info yfcc14m_dataset.tsv --shards y14_shards
 ```
 
-## Evaluation Data (Segmentation)
+## Evaluation Data - Segmentation
 
 #### Pascal VOC
 
@@ -132,4 +132,9 @@ python datapreparation_val.py \
   --save-dir local_data/ImageNet-S \
   --mode 300
 ```
+
+## Evaluation Data - Classification
+
+#### ImageNet
+
 
