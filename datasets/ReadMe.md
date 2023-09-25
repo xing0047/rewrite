@@ -4,7 +4,7 @@ As issue suggested, setting a lower `processes_count` (in my practice is `4`) en
 
 #### GCC3M
 
-Please download [CC3M training split file](https://storage.cloud.google.com/gcc-data/Train/GCC-training.tsv?_ga=2.191230122.-1896153081.1529438250) and name it to `c3.tsv`. Then run script below.
+Please download CC3M metadata [here](https://storage.cloud.google.com/gcc-data/Train/GCC-training.tsv?_ga=2.191230122.-1896153081.1529438250) and name it to `c3.tsv`. Then run script below.
 ```
 img2dataset --url_list c3.tsv \
   --input_format "tsv" \
