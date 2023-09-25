@@ -29,7 +29,7 @@ img2dataset --url_list c12.tsv \
   --url_col "url" \
   --caption_col "caption" \
   --output_format webdataset \
-  --output_folder local_data/c3_shards \
+  --output_folder local_data/c12_shards \
   --processes_count 4 \
   --thread_count 16 \
   --image_size 512 \
