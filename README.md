@@ -10,10 +10,6 @@ Code will be released soon. Please stay tuned.
 
 - [09/2023] arXiv available.
 
-## TODO
-- [ ] release visualization code.
-- [ ] release curation code.
-
 ## Environmental Setup
 ```
 conda create -n cocu python=3.7 -y
