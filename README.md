@@ -28,6 +28,14 @@ git clone https://github.com/NVIDIA/apex
 cd apex
 pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --global-option="--cpp_ext" --global-option="--cuda_ext" ./
 ```
+##### mmcv
+```
+pip install mmcv-full==1.3.14 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
+```
+##### others
+```
+pip install -r requirements.txt
+```
 ##### clip-retrieval
 ```
 pip install clip-retrieval
