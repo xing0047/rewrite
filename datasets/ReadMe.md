@@ -51,7 +51,7 @@ Next, run preprocessing script to derive `yfcc100m_dataset.sql` and an annotatio
 python convert_dataset/create_subset.py --input-dir . --output-dir . --subset yfcc100m_subset_data.tsv
 ```
 
-Then download YFCC14M dataset. Please make sure to reserve disk space for this.
+Then download YFCC14M dataset. Please make sure there is enough disk space to do this.
 ```
 pip install git+https://gitlab.com/jfolz/yfcc100m.git
 mkdir -p yfcc100m_meta
