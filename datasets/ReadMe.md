@@ -98,7 +98,9 @@ python tools/convert_datasets/coco_stuff164k.py local_data/coco_stuff164k --npro
 ```
 
 #### ADE20K
-
+```
+wget http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip
+```
 
 #### Cityscapes
 
