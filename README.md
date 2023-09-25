@@ -57,7 +57,7 @@ Please refer to datasets/ReadMe.md.
 
 ## Citation
 
-Please consider citing our paper if you find our work useful.
+Please consider citing our paper if you find our work useful for you.
 
 ## Acknowledgement
 
