@@ -54,7 +54,7 @@ CoCu
 
 ## Pre-train Data
 
-Setting a lower `processes_count` (in my practice is `4`) ensures higher successful rate of img2dataset download. If still got a low successful rate, please refer to [img2dataset](https://github.com/rom1504/img2dataset).
+Setting a lower `processes_count` (in my practice is `4`) ensures higher successful rate of img2dataset downloads. If still got a low successful rate, please refer to [img2dataset](https://github.com/rom1504/img2dataset).
 
 #### GCC3M
 
