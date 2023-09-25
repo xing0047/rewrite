@@ -87,6 +87,15 @@ Additionally, get `trainval_merged.json` from [here](https://codalabuser.blob.co
 ```
 python tools/convert_datasets/pascal_context.py local_data/VOCdevkit local_data/VOCdevkit/VOC2010/trainval_merged.json
 ```
+#### COCO Stuff
+
+```
+wget http://images.cocodataset.org/zips/val2017.zip
+wget http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuffthingmaps_trainval2017.zip
+unzip val2017.zip -d images/
+unzip stuffthingmaps_trainval2017.zip -d annotations/
+python tools/convert_datasets/coco_stuff164k.py local_data/coco_stuff164k --nproc 8
+```
 
 #### ADE20K
 
@@ -95,4 +104,4 @@ python tools/convert_datasets/pascal_context.py local_data/VOCdevkit local_data/
 
 #### ImageNet-S
 
-#### COCO Stuff
+
