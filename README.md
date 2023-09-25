@@ -41,20 +41,6 @@ pip install -r requirements.txt
 pip install clip-retrieval
 ```
 
-## Data Preparation
-
-Please refer to datasets/ReadMe.md.
-
-## Concept Curation
-
-## Train
-
-## Inference
-
-## Variants
-
-## FAQ
-
 ## Citation
 
 Please consider citing our paper if you find our work useful for you.
