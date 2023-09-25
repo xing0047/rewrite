@@ -69,14 +69,14 @@ python convert_dataset/convert_yfcc14m.py --root yfcc100m_zip --info yfcc14m_dat
 
 #### Pascal VOC
 
-Download Pascal VOC 2012.
+Please download Pascal VOC 2012 as follows.
 ```
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
 ```
 
 #### Pascal Context
 
-Download train and val set of Pascal Context as below.
+Please download train and val set of Pascal Context as below.
 
 ```
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2010/VOCtrainval_03-May-2010.tar
