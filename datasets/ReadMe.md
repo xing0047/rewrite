@@ -76,10 +76,16 @@ wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
 
 #### Pascal Context
 
-Download Pascal VOC 2010.
+Download train and val set of Pascal Context as below.
 
 ```
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2010/VOCtrainval_03-May-2010.tar
+```
+
+Additionally, get `trainval_merged.json` from [here](https://codalabuser.blob.core.windows.net/public/trainval_merged.json) and put it under `local_data/VOCdevkit/VOC2010/`. Then run as follows,
+
+```
+python tools/convert_datasets/pascal_context.py data/VOCdevkit data/VOCdevkit/VOC2010/trainval_merged.json
 ```
 
 #### ADE20K
