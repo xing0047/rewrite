@@ -12,7 +12,6 @@ Code will be released soon. Please stay tuned.
 
 ## TODO
 - [ ] release curation code.
-- [ ] data preparation code.
 
 ## Environmental Setup
 ```
