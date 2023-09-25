@@ -11,7 +11,8 @@ Code will be released soon. Please stay tuned.
 - [09/2023] arXiv available.
 
 ## TODO
-- [ ] Release curation code. 
+- [ ] release curation code.
+- [ ] data preparation code.
 
 ## Environmental Setup
 ```
