@@ -1,3 +1,53 @@
+## Overview
+
+Your data should look like:
+
+```
+GroupViT
+├── local_data
+│   ├── cityscapes
+│   │   ├── leftImg8bit
+│   │   │   ├── val
+│   │   ├── gtFine
+│   │   │   ├── val
+│   ├── VOCdevkit
+│   │   ├── VOC2012
+│   │   │   ├── JPEGImages
+│   │   │   ├── SegmentationClass
+│   │   │   ├── ImageSets
+│   │   │   │   ├── Segmentation
+│   │   ├── VOC2010
+│   │   │   ├── JPEGImages
+│   │   │   ├── SegmentationClassContext
+│   │   │   ├── ImageSets
+│   │   │   │   ├── SegmentationContext
+│   │   │   │   │   ├── val.txt
+│   │   │   ├── trainval_merged.json
+│   ├── ade
+│   │   ├── ADEChallengeData2016
+│   │   │   ├── annotations
+│   │   │   │   ├── validation
+│   │   │   ├── images
+│   │   │   │   ├── validation
+│   ├── coco_stuff164k
+│   │   ├── images
+│   │   │   ├── val2017
+│   │   ├── annotations
+│   │   │   ├── val2017
+│   ├── ImageNetS
+│   │   ├── ImageNetS300
+│   │   │   ├── validation
+│   │   │   ├── validation-segmentation
+│   │   ├── ImageNetS50
+│   │   │   ├── validation
+│   │   │   ├── validation-segmentation
+│   ├── coco
+│   │   ├── images
+│   │   │   ├── val2017
+│   │   ├── annotations
+│   │   │   ├── val2017
+```
+
 ## Pre-train Data
 
 As issue suggested, setting a lower `processes_count` (in my practice is `4`) ensures higher successful rate of img2dataset download. 
