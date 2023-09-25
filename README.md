@@ -42,15 +42,8 @@ pip install clip-retrieval
 ```
 
 ## Data Preparation
-##### GCC3M
-##### GCC12M
-##### YFCC14M
-##### Pascal VOC
-##### Pascal Context
-##### COCO
-##### ADE20K
-##### ImageNet-S
-##### COCO Stuff
+
+Please refer to datasets/ReadMe.md.
 
 ## Concept Curation
 
