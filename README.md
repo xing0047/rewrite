@@ -8,7 +8,7 @@ Code will be released soon. Please stay tuned.
 
 ## Updates
 
-- [09/2023] Arxiv available.
+- [09/2023] arXiv available.
 
 ## TODO
 - [ ] Release curation code. 
