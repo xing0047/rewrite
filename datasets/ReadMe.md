@@ -110,7 +110,7 @@ python tools/convert_datasets/cityscapes.py data/cityscapes --nproc 8
 
 #### ImageNet-S
 
-First, you should have a copy of ImageNet dataset. A way to do this is to download from [here](https://www.kaggle.com/competitions/imagenet-object-localization-challenge/data). Save it to `local_data/ImageNet`.
+First, you should have a copy of ImageNet dataset. A way to do this is to download from [here](https://www.kaggle.com/competitions/imagenet-object-localization-challenge/data). Save or soft-link it to `local_data/ImageNet`.
 
 Then, follow instructions given [here](https://github.com/LUSSeg/ImageNet-S). 
 ```
