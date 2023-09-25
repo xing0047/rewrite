@@ -103,6 +103,10 @@ wget http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip
 ```
 
 #### Cityscapes
+The Cityscapes dataset could be downloaded from [here](https://www.cityscapes-dataset.com/login/) after registration. After download, convert this data by:
+```
+python tools/convert_datasets/cityscapes.py data/cityscapes --nproc 8
+```
 
 #### ImageNet-S
 
