@@ -54,7 +54,7 @@ CoCu
 
 ## Pre-train Data
 
-As issue suggested, setting a lower `processes_count` (in my practice is `4`) ensures higher successful rate of img2dataset download. 
+As suggested by img2dataset, setting up [a high-performance dns resolver](https://github.com/rom1504/img2dataset#setting-up-a-high-performance-dns-resolver) will increase successful rate of download. Also, setting a lower `processes_count` (in my practice is `4`) ensures higher successful rate of img2dataset download. 
 
 #### GCC3M
 
