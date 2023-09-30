@@ -9,6 +9,7 @@ Code will be released soon. Please stay tuned.
 ## Updates
 
 - [09/2023] arXiv available.
+- [09/2023] accepted by [NeurIPS 2023](https://nips.cc/).
 
 ## Environmental Setup
 ```
