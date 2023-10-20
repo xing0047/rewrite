@@ -16,24 +16,20 @@ Code will be released soon. Please stay tuned.
 conda create -n cocu python=3.7 -y
 conda activate cocu
 ```
-##### torch
+##### dependencies
 ```
 conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c conda-forge
-```
-##### apex
-```
+pip install packaging
+
+# apex
 git clone https://github.com/NVIDIA/apex
 cd apex
 pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --global-option="--cpp_ext" --global-option="--cuda_ext" ./
-```
-##### mmcv
-```
+
+# mmcv
 pip install mmcv-full==1.3.14 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
 ```
-##### others
-```
-pip install -r requirements.txt
-```
+
 ##### clip-retrieval
 ```
 pip install clip-retrieval
