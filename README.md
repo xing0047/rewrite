@@ -15,9 +15,7 @@ Code will be released soon. Please stay tuned.
 ```
 conda create -n cocu python=3.7 -y
 conda activate cocu
-```
-##### dependency
-```
+
 conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c conda-forge
 pip install mmcv-full==1.3.14 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
 pip install packaging mmsegmentation==0.18.0 webdataset==0.1.103 timm==0.4.12 opencv-python==4.4.0.46 termcolor==1.1.0 diffdist einops omegaconf nltk ftfy regex tqdm clip-retrieval
@@ -25,6 +23,10 @@ pip install packaging mmsegmentation==0.18.0 webdataset==0.1.103 timm==0.4.12 op
 git clone https://github.com/NVIDIA/apex
 cd apex
 pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+```
+##### dependency
+```
+
 ```
 
 ## Data Preparation
