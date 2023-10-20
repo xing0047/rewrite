@@ -1,0 +1,1 @@
+packaging mmsegmentation==0.18.0 webdataset==0.1.103 timm==0.4.12 opencv-python==4.4.0.46 termcolor==1.1.0 diffdist einops omegaconf nltk ftfy regex tqdm clip-retrieval
