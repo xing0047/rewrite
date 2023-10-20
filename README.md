@@ -33,7 +33,7 @@ pip install -v \
 
 ## Data Preparation
 
-Please refer to [here](https://github.com/xing0047/CoCu/tree/main/data).
+Please refer to [data preparation page](https://github.com/xing0047/CoCu/tree/main/data).
 
 ## Citation
 
