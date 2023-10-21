@@ -33,10 +33,8 @@ Please consider citing our paper if you find our work useful for you.
 @misc{xing2023bridging,
       title={Bridging Semantic Gaps for Language-Supervised Semantic Segmentation}, 
       author={Yun Xing and Jian Kang and Aoran Xiao and Jiahao Nie and Shao Ling and Shijian Lu},
+      booktitle={Advances in Neural Information Processing Systems},
       year={2023},
-      eprint={2309.13505},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
 }
 ```
 
