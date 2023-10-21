@@ -20,9 +20,8 @@ conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c c
 pip install mmcv-full==1.3.14 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
 pip install -r requirements.txt
 
-git clone https://github.com/NVIDIA/apex
-cd apex
-pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+git clone https://github.com/ptrblck/apex.git
+cd apex & pip install -v --no-cache-dir ./
 ```
 
 ## Data Preparation
