@@ -1,4 +1,4 @@
-# [NeurIPS 2023] Bridging Semantic Gaps for Language Supervised Semantic Segmentation
+# Bridging Semantic Gaps for Language Supervised Semantic Segmentation
 
 This is the official repository of the following paper.
 > **[Bridging Semantic Gaps for Language Supervised Semantic Segmentation](https://arxiv.org/abs/2309.13505)**<br>
