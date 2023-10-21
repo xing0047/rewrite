@@ -72,6 +72,7 @@ img2dataset --url_list c3.tsv \
   --resize_mode keep_ratio \
   --resize_only_if_bigger True \
   --enable_wandb False
+rename -d 's/^/c3-/' ${DATASETS}/c3_shards/*
 ```
 
 #### GCC12M
@@ -90,6 +91,7 @@ img2dataset --url_list c12.tsv \
   --resize_mode keep_ratio \
   --resize_only_if_bigger True \
   --enable_wandb False
+rename -d 's/^/c12-/' ${DATASETS}/c12_shards/*
 ```
 
 #### YFCC14M
@@ -117,6 +119,7 @@ python -m yfcc100m.download yfcc100m_meta -o yfcc100m_zip
 Last, convert this to webdataset format.
 ```
 python convert_dataset/convert_yfcc14m.py --root yfcc100m_zip --info yfcc14m_dataset.tsv --shards y14_shards
+rename -d 's/^/y14-/' ${DATASETS}/y14_shards/*
 ```
 
 ## Evaluation Data - Segmentation
