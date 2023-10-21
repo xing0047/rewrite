@@ -40,4 +40,4 @@ Please consider citing our paper if you find our work useful.
 
 ## Acknowledgement
 
-The repo is built on [GroupViT](https://github.com/NVlabs/GroupViT) and [clip-retrieval](https://github.com/rom1504/clip-retrieval).
+The repo is built on [GroupViT](https://github.com/NVlabs/GroupViT).
