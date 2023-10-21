@@ -28,7 +28,7 @@ Please refer to [data preparation page](https://github.com/xing0047/CoCu/tree/ma
 
 ## Citation
 
-Please consider citing our paper if you find our work useful for you.
+Please consider citing our paper if you find our work useful.
 ```
 @misc{xing2023bridging,
       title={Bridging Semantic Gaps for Language-Supervised Semantic Segmentation}, 
