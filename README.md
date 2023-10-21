@@ -10,7 +10,6 @@ We propose **Concept Curation** to rewrite caption semantics by leveraging a pre
 ## Updates
 
 - [09/2023] arXiv available.
-- [09/2023] accepted by [NeurIPS 2023](https://nips.cc/).
 
 ## Environmental Setup
 ```
