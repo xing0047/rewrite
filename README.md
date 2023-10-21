@@ -5,7 +5,7 @@ This is the official repository of the following paper.
 > NeurIPS 2023<br>
 > Yun Xing, Jian Kang, Aoran Xiao, Jiahao Nie. Ling Shao, Shijian Lu<br>
 
-We propose **Concept Curation** to rewrite caption semantics by leveraging a pre-trained vision-language model. Please refer to [our paper](https://arxiv.org/abs/2309.13505) for details.
+We propose **Concept Curation** to rewrite caption semantics by leveraging a pre-trained vision-language model.
 
 ## Updates
 
