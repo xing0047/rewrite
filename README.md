@@ -28,7 +28,9 @@ Please refer to [data preparation page](https://github.com/xing0047/CoCu/tree/ma
 
 ## Run
 #### Pre-train
+```
 ./tools/dist_launch.sh main_group_vit.py /path/to/config 4
+```
 
 ## Citation
 
