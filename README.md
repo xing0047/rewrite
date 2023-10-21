@@ -30,7 +30,7 @@ Please refer to [data preparation page](https://github.com/xing0047/CoCu/tree/ma
 
 Please consider citing our paper if you find our work useful.
 ```
-@misc{xing2023bridging,
+@inproceedings{xing2023bridging,
       title={Bridging Semantic Gaps for Language-Supervised Semantic Segmentation}, 
       author={Yun Xing and Jian Kang and Aoran Xiao and Jiahao Nie and Shao Ling and Shijian Lu},
       booktitle={Advances in Neural Information Processing Systems},
