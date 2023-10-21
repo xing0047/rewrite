@@ -26,6 +26,10 @@ cd apex & pip install -v --no-cache-dir ./
 
 Please refer to [data preparation page](https://github.com/xing0047/CoCu/tree/main/data).
 
+## Run
+#### Pre-train
+./tools/dist_launch.sh main_group_vit.py /path/to/config 4
+
 ## Citation
 
 Please consider citing our paper if you find our work useful.
