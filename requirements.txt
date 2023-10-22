@@ -12,3 +12,4 @@ ftfy
 regex 
 tqdm 
 clip-retrieval
+textblob
