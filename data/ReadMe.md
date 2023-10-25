@@ -3,7 +3,7 @@
 Your data should look like:
 
 ```
-CoCu
+rewrite
 ├── $DATASETS
 │   ├── c3_shards
 │   ├── c12_shards
