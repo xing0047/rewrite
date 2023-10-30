@@ -119,7 +119,6 @@ python -m yfcc100m.download yfcc100m_meta -o yfcc100m_zip
 Last, convert this to webdataset format.
 ```
 python convert_dataset/convert_yfcc14m.py --root yfcc100m_zip --info yfcc14m_dataset.tsv --shards y14_shards
-rename -e 's/yfcc14m-0/y14-/g' local_data/y14_shards/*
 ```
 
 ## Evaluation Data - Segmentation
