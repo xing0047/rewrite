@@ -24,7 +24,7 @@ cd apex & pip install -v --no-cache-dir ./
 
 ## Data Preparation
 
-Please refer to [data preparation page](https://github.com/xing0047/CoCu/tree/main/data).
+Please refer to [data preparation page](https://github.com/xing0047/rewrite/tree/main/data).
 
 ## Run
 #### Pre-train
