@@ -13,8 +13,8 @@ This is the official repository of the following paper:
 
 ## Environmental Setup
 ```
-conda create -n cocu python=3.7 -y
-conda activate cocu
+conda create -n rewrite python=3.7 -y
+conda activate rewrite
 conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1 -c pytorch -c conda-forge
 pip install mmcv-full==1.3.14 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
 pip install -r requirements.txt
