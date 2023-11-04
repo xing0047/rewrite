@@ -189,8 +189,4 @@ python datapreparation_val.py \
   --mode 300
 ```
 
-## Evaluation Data - Classification
-
-#### ImageNet
-
 
