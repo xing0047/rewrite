@@ -30,7 +30,7 @@ def write_dataset(args):
     print(f'Length: \n{len(df)}')
 
     # This is the output pattern under which we write shards.
-    pattern = os.path.join(args.shards, f'y14-%05d.tar')
+    pattern = os.path.join(args.shards, f'yfcc14m-%06d.tar')
 
     with wds.ShardWriter(
             pattern, maxsize=int(args.maxsize),

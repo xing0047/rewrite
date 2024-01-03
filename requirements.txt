@@ -12,4 +12,4 @@ ftfy
 regex 
 tqdm 
 clip-retrieval
-textblob
+scikit-learn==1.0

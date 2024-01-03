@@ -11,8 +11,8 @@ data:
       gcc3m:
         type: img_txt_pair
         path: local_data/c3_shards
-        prefix: c3-{00000..00331}.tar
-        length: 2751755
+        prefix: c3-{00000..00275}.tar
+        length: 2751775
       imagenet:
         type: img_cls_pair
         path: local_data/imagenet_shards
@@ -65,11 +65,11 @@ evaluate:
   task:
     - seg
   cls:
-    save_best: false
+    save_best: true
     template: subset
   seg:
-    save_best: false
-    cfg: segmentation/configs/_base_/datasets/pascal_voc12.py
+    save_best: true
+    cfg: segmentation/configs/_base_/datasets/coco.py
     template: simple
     opts: []
 
@@ -84,7 +84,7 @@ checkpoint:
 model_name: '' # display name in the logger
 output: ???
 tag: default
-print_freq: 5
+print_freq: 10
 seed: 0
 wandb: false
 local_rank: ???

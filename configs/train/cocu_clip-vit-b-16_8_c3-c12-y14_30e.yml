@@ -1,0 +1,121 @@
+data:
+  batch_size: 256
+  pin_memory: true
+  num_workers: 6
+  # Thomas said it should be at least about 5-10x your batch size; beyond that,
+  # the differences become academic.
+  shuffle_buffer: 10000
+  seed: ${train.seed}
+  dataset:
+    meta:
+      gcc3m:
+        type: img_txt_pair
+        path: local_data/cocu_clip-vit-b-16_8_c3_shards
+        prefix: c3-{00000..00275}.tar
+        length: 2751755
+      gcc12m:
+        type: img_txt_pair
+        path: local_data/cocu_clip-vit-b-16_8_c12_shards
+        prefix: c12-{00000..00971}.tar
+        length: 9716186
+      yfcc14m:
+        type: img_txt_pair
+        path: local_data/cocu_clip-vit-b-16_8_y14_shards
+        prefix: y14-{00000..01451}.tar
+        length: 14517984
+      imagenet:
+        type: img_cls_pair
+        path: local_data/imagenet_shards
+        prefix: imagenet-val-{000000..000006}.tar
+        length: 50000
+    train:
+      - gcc3m
+      - gcc12m
+      - yfcc14m
+    val:
+      - imagenet
+  img_aug:
+    deit_aug: true
+    img_size: 224
+    img_scale: [0.08, 1.0]
+    interpolation: bilinear
+    color_jitter: 0.4
+    auto_augment: 'rand-m9-mstd0.5-inc1'
+    re_prob: 0.25
+    re_mode: 'pixel'
+    re_count: 1
+  text_aug:
+    max_seq_len: 77
+    multi_label: 3
+    word_type: 'noun'
+
+train:
+  start_epoch: 0
+  epochs: 30
+  warmup_epochs: 2
+  base_lr: 1.6e-3
+  weight_decay: 0.05
+  warmup_lr: 4e-6
+  min_lr: 4e-5
+  clip_grad: 5.0
+  accumulation_steps: 0
+  amp_opt_level: O1
+  seed: 0
+  lr_scheduler:
+    name: cosine
+  optimizer:
+    name: adamw
+    eps: 1e-8
+    betas: [0.9, 0.999]
+
+evaluate:
+  eval_only: false
+  eval_freq: 1
+  task:
+    - seg
+  cls:
+    save_best: false
+    template: subset
+  seg:
+    save_best: false
+    cfg: segmentation/configs/_base_/datasets/pascal_voc12.py
+    template: simple
+    opts: []
+
+checkpoint:
+  auto_resume: true
+  resume: ''
+  freq: 1
+  max_kept: -1
+  save_freq: 1
+
+model:
+  type: MultiLabelContrastive
+  img_encoder:
+    type: GroupViT
+    embed_dim: 384
+    num_heads: [6, 6, 6]
+    depths: [6, 3, 3]
+    num_group_tokens: [64, 8, 0]
+    num_output_groups: [64, 8]
+    drop_rate: 0.0
+    drop_path_rate: 0.1
+  text_encoder:
+    type: TextTransformer
+    context_length: 77
+    width: 256
+    layers: 12
+    vocab_size: 49408
+  contrast_temperature: 0.07
+  proj_num_layers: 2
+  output_dim: 256
+  multi_label: ${data.text_aug.multi_label}
+
+model_name: '' # display name in the logger
+output: ???
+tag: default
+print_freq: 5
+seed: 0
+wandb: false
+local_rank: ???
+vis: []

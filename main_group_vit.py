@@ -91,10 +91,12 @@ def train(cfg):
         import wandb
         wandb.init(
             project='group_vit',
+            entity='shinomiya',
             name=osp.join(cfg.model_name, cfg.tag),
             dir=cfg.output,
             config=OmegaConf.to_container(cfg, resolve=True),
-            resume=cfg.checkpoint.auto_resume)
+            resume=cfg.checkpoint.auto_resume
+        )
     else:
         wandb = None
     # waiting wandb init
@@ -105,8 +107,9 @@ def train(cfg):
 
     logger = get_logger()
 
-    logger.info(f'Creating model:{cfg.model.type}/{cfg.model_name}')
+    logger.info(f'Creating model: {cfg.model.type}/{cfg.model_name}')
     model = build_model(cfg.model)
+
     model.cuda()
     logger.info(str(model))
 
@@ -185,9 +188,6 @@ def train(cfg):
         if wandb is not None:
             log_stat = {f'epoch/train_{k}': v for k, v in loss_train_dict.items()}
             log_stat.update({
-                'epoch/val_acc1': acc1,
-                'epoch/val_acc5': acc5,
-                'epoch/val_loss': loss,
                 'epoch/val_miou': miou,
                 'epoch/epoch': epoch,
                 'epoch/n_parameters': n_parameters
@@ -221,7 +221,6 @@ def train_one_epoch(config, model, data_loader, optimizer, epoch, lr_scheduler):
     for idx, samples in enumerate(data_loader):
 
         batch_size = config.data.batch_size
-
         losses = model(**samples)
 
         loss, log_vars = parse_losses(losses)

@@ -1,4 +1,7 @@
-_base_: 'group_vit_c3_default.yml'
+_base_: 'eval_default.yml'
+data:
+  text_aug:
+    multi_label: 3
 
 model:
   type: MultiLabelContrastive
@@ -20,8 +23,10 @@ model:
   contrast_temperature: 0.07
   proj_num_layers: 2
   output_dim: 256
-  multi_label: ${data.text_aug.multi_label} # multi_label=0 is better for RedCap
-data:
-  dataset:
-    train:
-      - gcc3m
+  multi_label: ${data.text_aug.multi_label}
+evaluate:
+  seg:
+    save_best: true
+    cfg: segmentation/configs/_base_/datasets/ade.py
+    template: simple
+    opt: []
