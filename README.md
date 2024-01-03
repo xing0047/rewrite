@@ -23,9 +23,6 @@ git clone https://github.com/ptrblck/apex.git
 cd apex & pip install -v --no-cache-dir ./
 ```
 
-## Data Preparation
-Please refer to [data preparation page](https://gitee.com/xy173/rewrite/tree/master/data).
-
 ## Run
 #### Curation
 ```python
